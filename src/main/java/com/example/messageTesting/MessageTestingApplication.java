@@ -12,7 +12,7 @@ public class MessageTestingApplication {
 		ApplicationContext ctx=SpringApplication.run(MessageTestingApplication.class, args);
 		
 		JmsTemplate jms = ctx.getBean(JmsTemplate.class);
-		jms.convertAndSend("MyQueue", "My first text message to the messsage broker");
+		jms.convertAndSend("MyQueue", "Sending first text message to the messsage broker from the MessageTestingApplication.java, congrats!!!!!");
 	}
 
 }
